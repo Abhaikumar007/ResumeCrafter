@@ -8,63 +8,36 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 def enrich_cv_data(structured_data: dict) -> dict:
     """
-    Uses Google Gemini as a conditional evaluator and improver. It fixes bad
-    bullet points and leaves good ones untouched.
+    Uses Google Gemini as a pure creative writer. It uses simple placeholders for emphasis,
+    and is FORBIDDEN from writing LaTeX code itself.
     """
-    print("🧑‍🏫 [Teacher] Performing conditional evaluation and improvement...")
+    print("🧑‍🏫 [Teacher] Performing creative writing with simple placeholders...")
     data_string = json.dumps(structured_data, indent=2)
 
     prompt = f"""
-    You are a top-tier tech resume strategist. Your goal is to ensure every job and project has world-class achievement bullet points. You will receive items that have EITHER a messy 'raw_notes' field OR an existing 'description' list. You must intelligently process both cases.
+    You are a top-tier tech resume strategist. Your job is creative writing, NOT code generation.
 
-    ---
-    ### YOUR CORE LOGIC AND EXAMPLES ###
+    ### YOUR CORE LOGIC ###
+    Your task is to review the client's data and improve it.
+    - If you see a `raw_notes` field, deconstruct it into a new, professional `description` list.
+    - If you see an existing `description` list, evaluate each point: rewrite weak ones, but KEEP strong, quantified ones as they are.
+    - Write a powerful new `summary` and professionally categorize the `skills`.
 
-    #### CASE 1: You receive 'raw_notes' (a messy string).
-    Your task is to deconstruct it into a new, professional 'description' list.
-    **Input Example:**
-    {{ "raw_notes": "i did the frontend with library X, also built the REST apis and fixed some database issues." }}
-    **Required Output:**
-    {{ "description": [
-        "Developed a dynamic user interface using \\textbf{{Library X}}, improving user engagement.",
-        "Engineered backend RESTful APIs and optimized database queries to reduce server response time by \\textbf{{30%}}."
-      ]
-    }}
+    ### CRITICAL RULES FOR YOUR OUTPUT ###
+    1.  **USE PLACEHOLDERS FOR EMPHASIS (NON-NEGOTIABLE)**: When you want to emphasize a keyword, technology, or metric, you MUST wrap it in a special placeholder: `@@bold:text to bold@@`.
+        - **Correct Example:** `...increased performance by @@bold:25%@@ using @@bold:Python@@.`
+        - **INCORRECT:** `...increased performance by \\textbf{{25%}}...`
 
-    #### CASE 2: You receive 'description' (an existing list of bullet points).
-    Your task is to evaluate EACH bullet point. If it's weak, rewrite it. If it's already strong, KEEP IT AS IS.
-    **Input Example:**
-    {{ "description": [
-        "Reduced API latency by 40% through query optimization.",
-        "wrote code for the backend",
-        "Participated in daily stand-up meetings."
-      ]
-    }}
-    **Your Thinking Process for Evaluation:**
-    1.  "Reduced API latency...": This is a great bullet point. It's quantified and uses an action verb. I will keep it.
-    2.  "wrote code for the backend": This is weak. It's passive and lacks detail. I must rewrite it.
-    3.  "Participated in meetings...": This is a low-value activity, not an achievement. I must rewrite it to show impact, or remove it if it adds no value.
-    **Required Output:**
-    {{ "description": [
-        "Reduced API latency by 40% through query optimization.",
-        "Developed and maintained scalable backend services using \\textbf{{Node.js}} to support core application features.",
-        "Collaborated in an Agile environment, contributing to daily stand-ups to streamline development cycles and resolve blockers."
-      ]
-    }}
-    ---
+    2.  **DO NOT WRITE ANY LATEX CODE**: You are strictly FORBIDDEN from writing any LaTeX commands like `\\textbf`, `\\item`, etc. You are also FORBIDDEN from escaping special characters like `\\%` or `\\&`. A separate Python program will handle all of that. Just write clean, natural language with the `@@bold:...@@` placeholder where needed.
 
-    ### FINAL INSTRUCTIONS ###
-    1.  **APPLY THE LOGIC**: Apply the correct logic (CASE 1 or CASE 2) to every item in 'experience' and 'projects'. The final output for each item must have a 'description' field.
-    2.  **IMPROVE OTHER SECTIONS**: Also write a new, powerful 'summary' and professionally categorize the 'skills'.
-    3.  **LATEX FORMATTING**: Ensure correct `\\textbf{{}}` and special character escaping (`\\%`, `\\&`, etc.) in all rewritten points.
-    4.  **CLEANUP**: Leave the `raw_notes` field if it exists. Python will handle removing it.
+    3.  **KEEP `raw_notes`**: If the `raw_notes` field exists in the input, leave it in your output. Python will handle deleting it later.
 
     **CLIENT DATA TO TRANSFORM:**
     ---
     {data_string}
     ---
 
-    Return ONLY the transformed JSON object. No explanations.
+    Return ONLY the transformed JSON object.
     """
     
     try:
@@ -74,8 +47,8 @@ def enrich_cv_data(structured_data: dict) -> dict:
         )
         response = model.generate_content(prompt)
         enriched_data = json.loads(response.text)
-        print("✅ [Teacher] Conditional improvement complete.")
+        print("✅ [Teacher] Creative writing complete.")
         return enriched_data
     except Exception as e:
-        print(f"❌ [Teacher] Error during conditional improvement: {e}")
+        print(f"❌ [Teacher] Error during creative writing: {e}")
         return structured_data
