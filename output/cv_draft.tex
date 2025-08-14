@@ -1,0 +1,178 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% You can uncomment these if you have the fonts installed
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Abhai Kumar} \\ \vspace{1pt}
+    \small +91 7511172864 $|$ \href{mailto:abhaikumar015@gmail.com}{\underline{abhaikumar015@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/abhaikumar}{\underline{linkedin.com/in/abhaikumar}} $|$
+    \href{https://github.com/Abhaikumar007}{\underline{github.com/Abhaikumar007}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {B-Tech in Computer Science}{2023 - Present (3rd Year)}
+      {Valia Koonambaikulathamma College of Engineering \& Technology}{Trivandrum, India}
+    \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {syncify ERP intern}{None}
+      {None}{None}
+      \resumeItemListStart
+                \resumeItem{Developed and maintained backend services for syncify ERP using 	extbf{Django}, 	extbf{Flask}, and other advanced backend technologies.}
+                \resumeItem{Successfully managed and optimized systems on 	extbf{Linux} and other operating systems, ensuring high availability and load balancing.}
+              \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+        {\textbf{Eduhome Website} $|$ \emph{}}
+        {\href{https://myeduhome.netlify.app}{\underline{Link}}}
+        \resumeItemListStart
+                        \resumeItem{Architected and deployed a full-stack educational platform with over 100+ active users monthly.}
+                        \resumeItem{Engineered a responsive frontend layout that improved average page load speed by 	extbf{35\%}, enhancing user experience.}
+                    \resumeItemListEnd
+        \resumeProjectHeading
+        {\textbf{AI Text-to-Video Generator} $|$ \emph{}}
+        {}
+        \resumeItemListStart
+                        \resumeItem{Developed an end-to-end AI-powered tool to convert text prompts into 60-second videos in under two minutes.}
+                        \resumeItem{Implemented an automation pipeline using 	extbf{Python} that reduced manual video production time by up to 	extbf{95\%}.}
+                        \resumeItem{Integrated a Large Language Model (LLM) to automate video content creation and sequencing.}
+                    \resumeItemListEnd
+        \resumeProjectHeading
+        {\textbf{College Website} $|$ \emph{}}
+        {}
+        \resumeItemListStart
+                        \resumeItem{Spearheaded the development of a new college web interface, improving navigation and information access for over 600+ students.}
+                        \resumeItem{Designed and implemented highly responsive homepage and department pages, achieving 	extbf{90\%} mobile-first compatibility.}
+                    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+         \textbf{Languages}{: Python, JavaScript, HTML, CSS} \\
+         \textbf{Frameworks/Technologies}{: Django, Flask, Node.js, Git, Netlify, LLM Automation} \\
+         \textbf{Databases}{: MySQL, PostgreSQL} \\
+         \textbf{Tools}{: VS Code, Linux, Docker, TryHackme, Hackthebox} \\
+        }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}

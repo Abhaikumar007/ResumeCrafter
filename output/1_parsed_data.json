@@ -1,0 +1,75 @@
+{
+  "contact_info": {
+    "name": "Abhai Kumar",
+    "phone": "+91 7511172864",
+    "email": "abhaikumar015@gmail.com",
+    "linkedin": "abhaikumar",
+    "github": "Abhaikumar007"
+  },
+  "summary": "A proactive B-Tech Computer Science student with a strong passion for developing scalable websites, leveraging AI tools, and exploring cybersecurity. Proficient in full-stack development and eager to apply problem-solving skills to real-world challenges in a collaborative team environment. Actively seeking opportunities to contribute to innovative tech projects and drive meaningful results.",
+  "education": [
+    {
+      "degree": "B-Tech in Computer Science",
+      "university": "Valia Koonambaikulathamma College of Engineering & Technology",
+      "dates": "2023 - Present (3rd Year)",
+      "location": "Trivandrum, India"
+    }
+  ],
+  "certifications": [],
+  "experience": [
+    {
+      "title": "syncify ERP intern",
+      "company": null,
+      "dates": null,
+      "location": null,
+      "raw_notes": "developed their backend using django ,flask and other highly sophisticated backend technologiesworked with linux and other operating system and also maintained load balancing"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Eduhome Website",
+      "raw_notes": "Architected and deployed a full-stack educational platform serving over 100+ active users monthly.Engineered a responsive frontend layout that improved average page load speed by 35%, enhancing user experience.",
+      "technologies": [],
+      "url": "https://myeduhome.netlify.app"
+    },
+    {
+      "name": "AI Text-to-Video Generator",
+      "raw_notes": "Developed an end-to-end tool to convert text prompts into 60-second videos in under two minutes.Implemented an automation pipeline using Python that reduced manual video production time by up to 95%.Integrated a Large Language Model (LLM) to automate the core processes of video content creation and sequencing.",
+      "technologies": [],
+      "url": null
+    },
+    {
+      "name": "College Website",
+      "raw_notes": "Spearheaded the development of a new college web interface, improving navigation and information access for over 600+ students.Designed and implemented highly responsive homepage and department pages, achieving 90% mobile-first compatibility.",
+      "technologies": [],
+      "url": null
+    }
+  ],
+  "skills": {
+    "Languages": [
+      "Python",
+      "JavaScript",
+      "Html",
+      "Css"
+    ],
+    "Frameworks/Technologies": [
+      "Django",
+      "Flask",
+      "Node.js",
+      "Git",
+      "Netlify",
+      "LLM Automation"
+    ],
+    "Databases": [
+      "MySQL",
+      "PostgreSQL"
+    ],
+    "Tools": [
+      "VS Code",
+      "Linux",
+      "Docker",
+      "TryHackme",
+      "Hackthebox"
+    ]
+  }
+}

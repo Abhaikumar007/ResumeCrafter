@@ -1,0 +1,88 @@
+{
+  "contact_info": {
+    "name": "Abhai Kumar",
+    "phone": "+91 7511172864",
+    "email": "abhaikumar015@gmail.com",
+    "linkedin": "abhaikumar",
+    "github": "Abhaikumar007"
+  },
+  "summary": "A highly motivated and results-oriented B-Tech Computer Science student with a proven ability to design, develop, and deploy innovative full-stack applications.  Expertise in leveraging AI technologies and a strong passion for cybersecurity.  Seeking a challenging role where I can contribute to a dynamic team and solve complex problems.",
+  "education": [
+    {
+      "degree": "B-Tech in Computer Science",
+      "university": "Valia Koonambaikulathamma College of Engineering \\& Technology",
+      "dates": "2023 - Present (3rd Year)",
+      "location": "Trivandrum, India"
+    }
+  ],
+  "certifications": [],
+  "experience": [
+    {
+      "title": "syncify ERP intern",
+      "company": null,
+      "dates": null,
+      "location": null,
+      "description": [
+        "Developed and maintained backend services for syncify ERP using \textbf{Django}, \textbf{Flask}, and other advanced backend technologies.",
+        "Successfully managed and optimized systems on \textbf{Linux} and other operating systems, ensuring high availability and load balancing."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Eduhome Website",
+      "description": [
+        "Architected and deployed a full-stack educational platform with over 100+ active users monthly.",
+        "Engineered a responsive frontend layout that improved average page load speed by \textbf{35\\%}, enhancing user experience."
+      ],
+      "technologies": [],
+      "url": "https://myeduhome.netlify.app"
+    },
+    {
+      "name": "AI Text-to-Video Generator",
+      "description": [
+        "Developed an end-to-end AI-powered tool to convert text prompts into 60-second videos in under two minutes.",
+        "Implemented an automation pipeline using \textbf{Python} that reduced manual video production time by up to \textbf{95\\%}.",
+        "Integrated a Large Language Model (LLM) to automate video content creation and sequencing."
+      ],
+      "technologies": [],
+      "url": null
+    },
+    {
+      "name": "College Website",
+      "description": [
+        "Spearheaded the development of a new college web interface, improving navigation and information access for over 600+ students.",
+        "Designed and implemented highly responsive homepage and department pages, achieving \textbf{90\\%} mobile-first compatibility."
+      ],
+      "technologies": [],
+      "url": null
+    }
+  ],
+  "skills": {
+    "Languages": [
+      "Python",
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "Frameworks/Technologies": [
+      "Django",
+      "Flask",
+      "Node.js",
+      "Git",
+      "Netlify",
+      "LLM Automation"
+    ],
+    "Databases": [
+      "MySQL",
+      "PostgreSQL"
+    ],
+    "Tools": [
+      "VS Code",
+      "Linux",
+      "Docker",
+      "TryHackme",
+      "Hackthebox"
+    ]
+  }
+}
