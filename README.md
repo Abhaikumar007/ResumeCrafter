@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://ibb.co/zhyY2rQR"><img src="https://i.ibb.co/XZhg5bjs/Gemini-Generated-Image-et5zrzet5zrzet5z.png" alt="Gemini-Generated-Image-et5zrzet5zrzet5z" border="0"></a>
+<a href="https://ibb.co/zhyY2rQR"><img src="https://i.ibb.co/XZhg5bjs/Gemini-Generated-Image-et5zrzet5zrzet5z.png" style="width:30px" alt="Gemini-Generated-Image-et5zrzet5zrzet5z" border="0"></a>
 # 📝 ResumeCrafter  
 
 ResumeCrafter is an **LLM-powered resume builder** that transforms your **rough skill/experience notes** into a **professionally formatted, rich LaTeX CV**.  
