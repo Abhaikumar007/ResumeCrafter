@@ -3,9 +3,7 @@
 # 📝 ResumeCrafter  
 
 ResumeCrafter is an **LLM-powered resume builder** that transforms your **rough skill/experience notes** into a **professionally formatted, rich LaTeX CV**.  
-It integrates **structured prompts**, **custom templates**, and an **optional manual edit stage** to produce the **best possible resume**—every time you update your skills.
-
-
+Saving $100+ on Professional Resume Writers
 <br>
 
 [🔗 GitHub Repo](https://github.com/Abhaikumar007/ResumeCrafter) | [▶ Run Instructions](#how-to-run)
