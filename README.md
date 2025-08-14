@@ -6,7 +6,7 @@ ResumeCrafter is an **LLM-powered resume builder** that transforms your **rough 
 Saving $100+ on Professional Resume Writers
 <br>
 
-[🔗 GitHub Repo](https://github.com/Abhaikumar007/ResumeCrafter) | [▶ Run Instructions](#how-to-run)
+[🔗 GitHub Repo](https://github.com/Abhaikumar007/ResumeCrafter) | [▶ Run Instructions](#-installation--setup)
 
 </div>
 
