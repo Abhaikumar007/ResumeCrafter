@@ -1,8 +1,8 @@
 CONTACT:
 - Name: Abhai Kumar
-- Phone: +91 7511172864
-- Email: abhaikumar015@gmail.com
-- LinkedIn: abhaikumar
+- Phone: +91 XXXXXXXX
+- Email: XXXXXX@gmail.com
+- LinkedIn: XXXX
 - GitHub: Abhaikumar007 (Assumed from previous context, please verify)
 
 SUMMARY:
@@ -10,37 +10,37 @@ A proactive B-Tech Computer Science student with a strong passion for developing
 
 EDUCATION:
 - Degree: B-Tech in Computer Science
-- University: Valia Koonambaikulathamma College of Engineering & Technology
-- Dates: 2023 - Present (3rd Year)
-- Location: Trivandrum, India
+- University: XXX COLLEGE OF ENGINEERING AND TECHNOLOGY
+- Dates: 2023 - Present (3rd Year) 
+- Location:XXX
 
 SKILLS:
 - Languages: Python, JavaScript, Html, Css
 - Frameworks/Technologies: Django, Flask, Node.js, Git, Netlify, LLM Automation
 - Databases: MySQL, PostgreSQL
-- Tools: VS Code, Linux, Docker, TryHackme, Hackthebox
+- Tools: VS Code, Linux,
 - Soft Skills: Analytical Thinking, Team Collaboration, Proactive Problem-Solving
 
-experience : syncify ERP intern
-developed their backend using django ,flask and other highly sophisticated backend technologies
-worked with linux and other operating system and also maintained load balancing
+experience : 
+XXX
+YEAR - WHERE_YOU_WORKED
 
 
 
 PROJECTS:
-- Project Name: Eduhome Website
+- Project Name: YOUR WEBSITE
 - Role: Senior Web Developer
-- URL: https://myeduhome.netlify.app
+- URL: XXXX
 - Description:
     - Architected and deployed a full-stack educational platform serving over 100+ active users monthly.
     - Engineered a responsive frontend layout that improved average page load speed by 35%, enhancing user experience.
 
-- Project Name: AI Text-to-Video Generator
+- Project Name: XXXXX
 - Role: Creator & Innovator
 - Description:
-    - Developed an end-to-end tool to convert text prompts into 60-second videos in under two minutes.
-    - Implemented an automation pipeline using Python that reduced manual video production time by up to 95%.
-    - Integrated a Large Language Model (LLM) to automate the core processes of video content creation and sequencing.
+    - Developed an end-to-end tool to convertXXinto X in under two minutes.
+    - Implemented an automation pipeline using Python that reduced manual X production time by up to 95%.
+    - Integrated a Large Language Model (LLM) to automate the core processes of X content creation and sequencing.
 
 - Project Name: College Website
 - Role: Frontend Developer
@@ -48,13 +48,7 @@ PROJECTS:
     - Spearheaded the development of a new college web interface, improving navigation and information access for over 600+ students.
     - Designed and implemented highly responsive homepage and department pages, achieving 90% mobile-first compatibility.
 
-LANGUAGES SPOKEN:
-- English (Fluent)
-- Hindi (Fluent)
-- Malayalam (Native)
 
 INTERESTS:
 - Self Improvement
 - Staying current with emerging Technology News
-- Applying Python Automation to solve real-life problems
-- Cybersecurity & Ethical Hacking
