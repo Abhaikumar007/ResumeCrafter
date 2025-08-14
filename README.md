@@ -42,6 +42,50 @@ It integrates **structured prompts**, **custom templates**, and an **optional ma
 
 ---
 
+
 ---
-#STILL WORK IN PROGRESS
+
+## ⚠️ Template Warning
+We **recommend not changing** the default template unless you know LaTeX well.  
+Changing templates may cause formatting issues or LaTeX errors.  
+
+---
+
+## 📦 Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/Abhaikumar007/ResumeCrafter
+cd ResumeCrafter
+```
+### Install dependencies
+Make sure you have Python 3.8+ installed.
+Install required packages:
+
+```bash
+pip install -r requirements.txt
+```
+### Prepare your resume outline
+Open input.txt and add your details in this format:
+
+```yaml
+Name: John Doe
+Email: john@example.com
+Phone: +1 234 567 890
+Education:
+    - B.Sc. Computer Science, XYZ University, 2020-2024
+Experience:
+    - Software Engineer Intern, ABC Corp, 2023
+Skills:
+    - Python, Machine Learning, Git
+Projects:
+    - ResumeCrafter: AI-powered resume builder
+```
+## ▶️ Running the Application
+### Run the main program:
+```bash
+python app.py
+```
+---
+# STILL IN DEVELOPMENT
 ---
