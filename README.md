@@ -65,6 +65,19 @@ Changing templates may cause formatting issues or LaTeX errors.
 git clone https://github.com/Abhaikumar007/ResumeCrafter
 cd ResumeCrafter
 ```
+## Set up your Google Gemini API key
+
+- Sign up at Google AI Studio.
+
+- Create an API key.
+
+- Add it as an environment variable:
+```bash
+export GEMINI_API_KEY="your_api_key_here"   # macOS / Linux
+setx GEMINI_API_KEY "your_api_key_here"     # Windows (CMD)
+```
+- store it in .env file
+
 ### Install dependencies
 Make sure you have Python 3.8+ installed.
 Install required packages:
